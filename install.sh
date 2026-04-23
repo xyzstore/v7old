@@ -795,13 +795,15 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-wget  ${REPO}limit/menu.zip
-unzip menu.zip
-chmod +x menu/*
-mv menu/* /usr/local/sbin
+# Download folder limit/menu/ langsung dari repo (tanpa perlu menu.zip)
+rm -rf /tmp/v7old-menu
+mkdir -p /tmp/v7old-menu
+wget -qO- https://github.com/xyzstore/v7old/archive/refs/heads/main.tar.gz \
+  | tar xz -C /tmp/v7old-menu --strip-components=2 v7old-main/limit/menu
+chmod +x /tmp/v7old-menu/menu/*
+mv /tmp/v7old-menu/menu/* /usr/local/sbin
 sudo dos2unix /usr/local/sbin/install-plugin
-rm -rf menu
-rm -rf menu.zip
+rm -rf /tmp/v7old-menu
 }
 function profile(){
 clear
