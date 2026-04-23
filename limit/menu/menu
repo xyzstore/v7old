@@ -130,7 +130,7 @@ DROPBEAR_VERSION=$(dropbear -V 2>&1 | grep -oE 'v[0-9.]+')
 XRAY_VERSION=$(xray version 2>/dev/null | head -n 1 | awk '{print $2}')
 echo -e " "
 echo -e "\033[0;34m┌──────────────────────────────────────────┐$NC"
-echo -e "\033[0;34m│$NC \033[1;96m            • ARI TUNNELING •           \033[0;34m │$NC"
+echo -e "\033[0;34m│$NC \033[1;96m            • XYUZZKHUNNNN •           \033[0;34m │$NC"
 echo -e "\033[0;34m└──────────────────────────────────────────┘$NC"
 echo -e "\033[0;34m┌──────────────────────────────────────────┐$NC"
 echo -e "\033[0;34m│$WHITE System OS ${NC}     $WHITE:$NC $MODEL${NC}"
