@@ -809,6 +809,30 @@ function profile(){
 clear
 # Pastikan /etc/botapi.conf ada (akan ditulis ulang oleh installer bot kalau dipasang)
 [ -f /etc/botapi.conf ] || touch /etc/botapi.conf
+
+# === FIX: hostname resolution (cegah delay 20-30 detik tiap perintah) ===
+HN=$(cat /etc/hostname 2>/dev/null)
+[ -z "$HN" ] && HN="vps-server" && echo "$HN" > /etc/hostname
+hostnamectl set-hostname "$HN" 2>/dev/null
+sed -i '/127.0.1.1/d' /etc/hosts
+sed -i '/^127.0.0.1/d' /etc/hosts
+{ echo "127.0.0.1 localhost"; echo "127.0.1.1 $HN $HN.localdomain"; cat /etc/hosts; } > /tmp/hosts.new
+mv /tmp/hosts.new /etc/hosts
+
+# === FIX: SSH disable DNS reverse-lookup (login lambat) ===
+sed -i '/^UseDNS/d; /^#UseDNS/d; /^GSSAPIAuthentication/d; /^#GSSAPIAuthentication/d' /etc/ssh/sshd_config
+echo "UseDNS no" >> /etc/ssh/sshd_config
+echo "GSSAPIAuthentication no" >> /etc/ssh/sshd_config
+
+# === FIX: cache ip-api.com supaya menu tidak lambat tiap login ===
+cat >/etc/cron.d/cache-ipinfo <<'IPEOF'
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+*/30 * * * * root curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
+@reboot root sleep 30 && curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
+IPEOF
+curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
+
 cat >/root/.profile <<EOF
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 if [ "\$BASH" ]; then
