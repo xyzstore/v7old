@@ -78,7 +78,7 @@ async def create_trojan(event):
 http://{DOMAIN}:81/trojan-{user}.yaml
 **◇━━━━━━━━━━━━━━━━━◇**
 **Expired Until:** `{later}`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 **◇━━━━━━━━━━━━━━━━━◇**
 https://api.qrserver.com/v1/create-qr-code/?size=400x400&data={b[0]}
 """
@@ -178,7 +178,7 @@ async def trial_trojan(event):
 http://{DOMAIN}:81/trojan-{remarks}.yaml
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `60 Minutes`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 **◇━━━━━━━━━━━━━━━━━◇**
 https://api.qrserver.com/v1/create-qr-code/?size=400x400&data={b[0]}
 """

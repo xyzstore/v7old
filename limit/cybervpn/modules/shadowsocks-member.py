@@ -79,7 +79,7 @@ async def create_shadowsocks(event):
 **» Link QR  :** `Link Via Qris  :https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${x[0]}`
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 *◇━━━━━━━━━━━━━━━━━◇**
 
         """
@@ -297,7 +297,7 @@ async def trial_shadowsocks(event):
 **» Link QR  :** `Link Via Qris  :https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${x[0]}`
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 *◇━━━━━━━━━━━━━━━━━◇**
 
         """

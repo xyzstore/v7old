@@ -324,7 +324,7 @@ async def callback_about(cb: types.CallbackQuery):
         "» *Bisa Hapus Sub Domain Yang Di Pilih*\\.\n"
         "» *Otomatis Memindai Domain Utama Di Akun CF Kalian*\\.\n"
         "» *Ada Fitur Log Out Akun, Jadi Bisa Gonta Ganti Ke Akun Lain*\\.\n\n"
-        "Untuk Sewa Bot Bisa Chat Admin Ganteng @xytunnn\\"
+        "Untuk Sewa Bot Bisa Chat Admin Ganteng @ARI_VPN_STORE\\"
     )
 
 
@@ -432,7 +432,7 @@ async def show_help(cb: types.CallbackQuery):
         "» *Bisa Hapus Sub Domain Yang Di Pilih*\\.\n"
         "» *Otomatis Memindai Domain Utama Di Akun CF Kalian*\\.\n"
         "» *Ada Fitur Log Out Akun, Jadi Bisa Gonta Ganti Ke Akun Lain*\\.\n\n"
-        "Untuk Sewa Bot Bisa Chat Admin Ganteng @xytunnn\\" # Dihapus bagian "Pastikan Telah Bergabung Di Channel Dan Grup Admin Terlebih Dahulu Untuk Menggunakan Bot Ini\\."
+        "Untuk Sewa Bot Bisa Chat Admin Ganteng @ARI_VPN_STORE\\" # Dihapus bagian "Pastikan Telah Bergabung Di Channel Dan Grup Admin Terlebih Dahulu Untuk Menggunakan Bot Ini\\."
     )
     keyboard = InlineKeyboardMarkup().add(
         InlineKeyboardButton("⬅️ Kembali ke Menu", callback_data="back_to_main_menu")
@@ -2002,7 +2002,7 @@ async def about_handler(msg: types.Message):
         "» *Bisa Hapus Sub Domain Yang Di Pilih*\\.\n"
         "» *Otomatis Memindai Domain Utama Di Akun CF Kalian*\\.\n"
         "» *Ada Fitur Log Out Akun, Jadi Bisa Gonta Ganti Ke Akun Lain*\\.\n\n"
-        "Untuk Sewa Bot Bisa Chat Admin Ganteng @xytunnn\\"
+        "Untuk Sewa Bot Bisa Chat Admin Ganteng @ARI_VPN_STORE\\"
     )
     await msg.answer(text, parse_mode="MarkdownV2")
         
@@ -2145,7 +2145,7 @@ async def handle_help_button(msg: types.Message):
         "» *Bisa Hapus Sub Domain Yang Di Pilih*\\.\n"
         "» *Otomatis Memindai Domain Utama Di Akun CF Kalian*\\.\n"
         "» *Ada Fitur Log Out Akun, Jadi Bisa Gonta Ganti Ke Akun Lain*\\.\n\n"
-        "Untuk Sewa Bot Bisa Chat Admin Ganteng @xytunnn\\",
+        "Untuk Sewa Bot Bisa Chat Admin Ganteng @ARI_VPN_STORE\\",
         # Dihapus bagian "Pastikan Telah Bergabung Di Channel Dan Grup Admin Terlebih Dahulu Untuk Menggunakan Bot Ini\\."
         reply_markup=keyboard,
         parse_mode="MarkdownV2"

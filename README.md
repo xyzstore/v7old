@@ -70,7 +70,7 @@ Script ini sudah diuji pada sistem berikut:
 * Auto swap 1GB
 * Instalasi otomatis & dinamis
 * Optimasi konfigurasi server
-* Core Xray by @xytunnn
+* Core Xray by @ARI_VPN_STORE
 * Fail2ban security system
 * Auto block sebagian iklan Indonesia
 * Auto clean log tiap 3 menit
@@ -176,11 +176,11 @@ Under Attack Mode      : OFF
 ## CONTACT & AUTHOR
 
 <p align="center">
-<a href="https://t.me/xytunnn"><img src="https://img.shields.io/badge/Telegram-Contact-blue?style=for-the-badge&logo=telegram"></a>
+<a href="https://t.me/ARI_VPN_STORE"><img src="https://img.shields.io/badge/Telegram-Contact-blue?style=for-the-badge&logo=telegram"></a>
 </p>
 
 <p align="center">
-<a href="wa.me/6285960592386"><img src="https://img.shields.io/badge/WhatsApp-Contact-green?style=for-the-badge&logo=whatsapp"></a>
+<a href="wa.me/6281327393959"><img src="https://img.shields.io/badge/WhatsApp-Contact-green?style=for-the-badge&logo=whatsapp"></a>
 </p>
 ```
 

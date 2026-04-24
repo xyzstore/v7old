@@ -107,7 +107,7 @@ TEXT="
 <code>IP VPS :</b> <code>$MYIP </code>
 <code>DOMAIN :</b> <code>$pp</code>
 <code>===============================</code>
-<code>BY BOT : @xytunnn</code>
+<code>BY BOT : @ARI_VPN_STORE</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }

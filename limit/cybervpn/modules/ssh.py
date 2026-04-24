@@ -21,7 +21,7 @@ async def ssh(event):
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{location_info["isp"]}`
 **» Country:** `{location_info["country"]}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
         await event.edit(msg, buttons=inline)
@@ -45,7 +45,7 @@ async def ssh(event):
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{location_info["isp"]}`
 **» Country:** `{location_info["country"]}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
         await event.edit(msg, buttons=inline)

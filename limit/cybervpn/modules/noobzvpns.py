@@ -63,7 +63,7 @@ async def create_noobz(event):
 `GET / HTTP/1.1[crlf]Host: [s_host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» Expired Until:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
         """
 
@@ -124,12 +124,12 @@ async def trial_noobz(event):
 `GET / HTTP/1.1[crlf]Host: [s_host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» Expired Until:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "t.me/wa.me/6285960592386"),
-                 Button.url("[ Channel ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "t.me/wa.me/6281327393959"),
+                 Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
 

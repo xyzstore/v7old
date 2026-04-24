@@ -106,7 +106,7 @@ async def create_vmess(event):
 `{b[2].strip("'")}`
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 **◇━━━━━━━━━━━━━━━━━◇**
 **openclass:**
 http://{DOMAIN}:81/vmess-{z["ps"]}.yaml
@@ -210,7 +210,7 @@ async def trial_vmess(event):
 `{b[2].strip("'")}`
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `1 hari`
-*» 💌@xytunnn**
+*» 💌@ARI_VPN_STORE**
 **◇━━━━━━━━━━━━━━━━━◇**
 **openclass:**
 http://{DOMAIN}:81/vmess-{z["ps"]}.yaml

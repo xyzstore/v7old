@@ -6,7 +6,7 @@ async def start(event):
 	inline = [
 [Button.inline("PANEL CREATE ACCOUNT","menu")],
 [Button.url("GRUP WHATSAPP","https://chat.whatsapp.com/HNACwQRxuoY7rVg6q12d4m"),
-Button.url("ORDER SCRIPT","https://t.me/xytunnn")]]
+Button.url("ORDER SCRIPT","https://t.me/ARI_VPN_STORE")]]
 	sender = await event.get_sender()
 	val = valid(str(sender.id))
 	if val == "false":
@@ -38,7 +38,7 @@ Button.url("ORDER SCRIPT","https://t.me/xytunnn")]]
 ✨ **» CITY :** `{city.strip()}`
 ✨ **» DOMAIN :** `{DOMAIN}`
 ✨ **» IP VPS :** `{ipsaya.strip()}`
-🤖 **» @xytunnn**
+🤖 **» @ARI_VPN_STORE**
 ━━━━━━━━━━━━━━━━━━━━━━━
 """
 		x = await event.edit(msg,buttons=inline)

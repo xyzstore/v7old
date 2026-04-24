@@ -33,7 +33,7 @@ async def registrasi_handler(event):
 **» Ketik /menu untuk login**
 **━━━━━━━━━━━━━━━━**
 **» Registration Date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
     inline = [

@@ -101,12 +101,12 @@ async def create_ssh(event):
 `GET wss:/// HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» Expired Until:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
-                 Button.url("[ Channel ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
+                 Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
     

@@ -29,7 +29,7 @@ checking_sc() {
     echo -e "   Your VPS $IP Has been Banned"
     echo -e "     Buy access permissions for scripts"
     echo -e "             Contact Admin :"
-    echo -e "      WhatsApp wa.me/6285960592386"
+    echo -e "      WhatsApp wa.me/6281327393959"
     echo -e "────────────────────────────────────────────"
     exit 1
   fi

@@ -68,7 +68,7 @@ async def topup_user(event):
 ** Waktu transaksi: {waktu_awal.strftime("%H:%M:%S")}**
 ** Expired transaksi: {waktu_expired.strftime("%H:%M:%S")}**
 **◇━━━━━━━━━━━━━━━━━◇**
-**Notice:** Setelah melakukan topup, harap kirim bukti transfer ke admin @xytunnn untuk mempercepat proses transaksi!
+**Notice:** Setelah melakukan topup, harap kirim bukti transfer ke admin @ARI_VPN_STORE untuk mempercepat proses transaksi!
 **◇━━━━━━━━━━━━━━━━━◇**
                 """
                 buttons = [[Button.inline("‹ Main Menu ›", "menu")]]

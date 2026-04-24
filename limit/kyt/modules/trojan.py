@@ -64,7 +64,7 @@ Button.inline(" 60 Day ","60")]])
 » Format OpenClash : https://{domain}:81/trojan-{user}.txt
 ◇━━━━━━━━━━━━━━━━━◇
 Expired Until: `{later}`
-**»🤖@xytunnn**
+**»🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -87,7 +87,7 @@ async def cek_trojan(event):
 {z}
 
 **Shows Logged In Users Trojan**
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -151,7 +151,7 @@ Button.inline(" 60 Menit ","60")]])
 `{b[1].replace(" ","")}`
 ◇━━━━━━━━━━━━━━━━━◇
 » Expired Until: `{exp} Minutes`
-**»🤖@xytunnn**
+**»🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -203,7 +203,7 @@ Button.inline(" DELETE TROJAN ","delete-trojan")],
 ✨ **» Hostname/IP :** `{DOMAIN}`
 ✨ **» ISP :** `{z["isp"]}`
 ✨ **» Country :** `{z["country"]}`
-🤖 **» @xytunnn**
+🤖 **» @ARI_VPN_STORE**
 ✧◇───────────────────◇✧ 
 """
 		await event.edit(msg,buttons=inline)

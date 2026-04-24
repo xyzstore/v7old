@@ -30,12 +30,12 @@ async def registrasi_handler(event):
 **» Balance:** `IDR.0`
 **━━━━━━━━━━━━━━━━**
 **» Registration Date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
         inline = [
-            [Button.url("[ Contact ]", "wa.me/6285960592386"),
-             Button.url("[ Channel ]", "t.me/xytunnn")]
+            [Button.url("[ Contact ]", "wa.me/6281327393959"),
+             Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
         ]
         await event.respond(msg, buttons=inline)
 

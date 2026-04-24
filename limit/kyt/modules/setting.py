@@ -29,7 +29,7 @@ async def rebooot(event):
 		subprocess.check_output(cmd, shell=True)
 		await event.edit(f"""
 **» REBOOT SERVER**
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -68,7 +68,7 @@ async def resx(event):
 		await event.edit(f"""
 ```Processing... 100%\n█████████████████████████ ```
 **» Restarting Service Done**
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -104,7 +104,7 @@ async def speedtest(event):
 **
 {z}
 **
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -131,7 +131,7 @@ async def backup(event):
 ```
 {a}
 ```
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -156,7 +156,7 @@ async def restsore(event):
 			await event.respond("**Link Not Exist**")
 		else:
 			msg = f"""```{z}```
-**🤖@xytunnn**
+**🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -182,7 +182,7 @@ Button.inline(" RESTORE","restore")],
 ✨ **» Hostname/IP :** `{DOMAIN}`
 ✨ ** » ISP :** `{z["isp"]}`
 ✨ ** » Country :** `{z["country"]}`
-🤖 **»@xytunnn**
+🤖 **»@ARI_VPN_STORE**
 ✧◇───────────────────◇✧ 
 """
 		await event.edit(msg,buttons=inline)
@@ -211,7 +211,7 @@ Button.inline(" RESTART ","resx")],
 ✨ **»  Hostname/IP :** `{DOMAIN}`
 ✨ ** » ISP :** `{z["isp"]}`
 ✨ ** » Country :** `{z["country"]}`
-🤖 ** » @xytunnn**
+🤖 ** » @ARI_VPN_STORE**
 ✧◇───────────────────◇✧ 
 """
 		await event.edit(msg,buttons=inline)

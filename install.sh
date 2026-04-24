@@ -21,8 +21,8 @@ LIME='\e[38;5;155m'
 ungu="\e[38;5;99m"
 NC='\033[0m'
 TIMES="10"
-CHATID="7768199065"
-KEY="7854131719:AAElutfvF5Qp9tGXGQw7pUqFiJGNyDdVlHs"
+CHATID="1962241851"
+KEY="8681894724:AAEH_ZDs98e8rbs9_4_NXlYoDYdf2JMjEKE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -30,7 +30,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${BIWhite}----------------------------------------------------------${NC}"  
-echo -e "${LIME}Script Tunneling VPN Premium xyuzstorez${NC}"
+echo -e "${LIME}Script Tunneling VPN Premium Ari Project${NC}"
 echo -e "${BIWhite}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -346,7 +346,7 @@ TEXT="
 <b> SCRIPT NOTIF </b>
 <code>────────────────────</code>
 <i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/xytunnn"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/ARI_VPN_STORE"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -795,57 +795,25 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-# Download folder limit/menu/ langsung dari repo (tanpa perlu menu.zip)
-rm -rf /tmp/v7old-menu
-mkdir -p /tmp/v7old-menu
-wget -qO- https://github.com/xyzstore/v7old/archive/refs/heads/main.tar.gz \
-  | tar xz -C /tmp/v7old-menu --strip-components=2 v7old-main/limit/menu
-chmod +x /tmp/v7old-menu/menu/*
-mv /tmp/v7old-menu/menu/* /usr/local/sbin
+wget  ${REPO}limit/menu.zip
+unzip menu.zip
+chmod +x menu/*
+mv menu/* /usr/local/sbin
 sudo dos2unix /usr/local/sbin/install-plugin
-rm -rf /tmp/v7old-menu
+rm -rf menu
+rm -rf menu.zip
 }
 function profile(){
 clear
-# Pastikan /etc/botapi.conf ada (akan ditulis ulang oleh installer bot kalau dipasang)
-[ -f /etc/botapi.conf ] || touch /etc/botapi.conf
-
-# === FIX: hostname resolution (cegah delay 20-30 detik tiap perintah) ===
-HN=$(cat /etc/hostname 2>/dev/null)
-[ -z "$HN" ] && HN="vps-server" && echo "$HN" > /etc/hostname
-hostnamectl set-hostname "$HN" 2>/dev/null
-sed -i '/127.0.1.1/d' /etc/hosts
-sed -i '/^127.0.0.1/d' /etc/hosts
-{ echo "127.0.0.1 localhost"; echo "127.0.1.1 $HN $HN.localdomain"; cat /etc/hosts; } > /tmp/hosts.new
-mv /tmp/hosts.new /etc/hosts
-
-# === FIX: SSH disable DNS reverse-lookup (login lambat) ===
-sed -i '/^UseDNS/d; /^#UseDNS/d; /^GSSAPIAuthentication/d; /^#GSSAPIAuthentication/d' /etc/ssh/sshd_config
-echo "UseDNS no" >> /etc/ssh/sshd_config
-echo "GSSAPIAuthentication no" >> /etc/ssh/sshd_config
-
-# === FIX: cache ip-api.com supaya menu tidak lambat tiap login ===
-cat >/etc/cron.d/cache-ipinfo <<'IPEOF'
-SHELL=/bin/bash
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-*/30 * * * * root curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
-@reboot root sleep 30 && curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
-IPEOF
-curl -s --max-time 5 "http://ip-api.com/json/?fields=country,region,city,timezone,isp" > /tmp/ipinfo.json 2>/dev/null
-
 cat >/root/.profile <<EOF
-export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-if [ "\$BASH" ]; then
+if [ "$BASH" ]; then
 if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
 fi
 mesg n || true
-[ -t 0 ] && menu
+menu
 EOF
-# Pastikan PATH juga tersedia di sesi non-login (interactive bash)
-grep -q "/usr/local/sbin" /root/.bashrc 2>/dev/null || \
-  echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin' >> /root/.bashrc
 cat >/etc/cron.d/xp_all <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin

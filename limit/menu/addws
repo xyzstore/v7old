@@ -40,7 +40,7 @@ export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 # getting notif trx
 CHATID2="-1001381824793"
-KEY2="7854131719:AAElutfvF5Qp9tGXGQw7pUqFiJGNyDdVlHs"
+KEY2="8681894724:AAEH_ZDs98e8rbs9_4_NXlYoDYdf2JMjEKE"
 export TIME="10"
 export URL2="https://api.telegram.org/bot$KEY2/sendMessage"
 clear
@@ -321,7 +321,7 @@ TEXT="
 ✨  » <code>Berakhir :</code> ${expe}
 ◇━━━━━━━━━━━━━━━━━━◇
 <i>Notif Transaksi Akun VMESS...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":" ORDER ","url":"https://t.me/xytunnn"},{"text":" TESTIMONI ","url":"https://t.me/RAJA_VPN_STORE"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":" ORDER ","url":"https://t.me/ARI_VPN_STORE"},{"text":" TESTIMONI ","url":"https://t.me/RAJA_VPN_STORE"}]]}'
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
 clear

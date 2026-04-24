@@ -332,16 +332,16 @@ menu_backup_tool() {
   done
 }
 
-# ====== SUBMENU xyuzstorez (updated to include backup tool) ======
+# ====== SUBMENU ARI VPN (updated to include backup tool) ======
 menu_arivpn() {
   while true; do
     clear
     print_header
-    printf "${PURPLE}│${NC} %-49s ${PURPLE}│${NC}\n" "⚙️  MENU BOT xyuzstorez"
+    printf "${PURPLE}│${NC} %-49s ${PURPLE}│${NC}\n" "⚙️  MENU BOT ARI VPN"
     print_line
     printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "1️  Plugin API Bot"
-    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "2️  Bot Seller xyuzstorez"
-    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "3  Restart Bot xyuzstorez"
+    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "2️  Bot Seller ARI VPN"
+    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "3  Restart Bot ARI VPN"
     printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "4  Backup & Restore Tool"
     printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "0  Kembali"
     print_footer
@@ -349,7 +349,7 @@ menu_arivpn() {
     case $optx in
       1) clear; apt install dos2unix -y >/dev/null 2>&1 && wget -q https://raw.githubusercontent.com/xyzstore/v7old/main/bot/api.sh && chmod +x api.sh && dos2unix api.sh && ./api.sh ;;
       2) clear; sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update -y && apt install -y git && apt install -y curl && curl -L -k -sS https://raw.githubusercontent.com/arivpnstores/BotVPN2/refs/heads/main/start -o start && bash start sellvpn && [ $? -eq 0 ] && rm -f start ;;
-      3) clear; print_header; printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "🔄 Restarting Bot xyuzstorez..."; print_footer; systemctl restart sellvpn; echo -e "${GREEN}✅ Restarted.${NC}"; read -n 1 -s -r -p "ENTER";;
+      3) clear; print_header; printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "🔄 Restarting Bot ARI VPN..."; print_footer; systemctl restart sellvpn; echo -e "${GREEN}✅ Restarted.${NC}"; read -n 1 -s -r -p "ENTER";;
       4) menu_backup_tool ;;
       0) break ;;
       *) echo -e "${RED}Pilihan tidak valid!${NC}"; sleep 1 ;;
@@ -363,8 +363,8 @@ menu_wildcard() {
     print_header
     printf "${PURPLE}│${NC} %-49s ${PURPLE}│${NC}\n" "⚙️  MENU BOT WILDCARD VPN"
     print_line
-    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "1️⃣  Install Bot Wildcard xyuzstorez"
-    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "2️⃣  Restart Bot Wildcard xyuzstorez"
+    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "1️⃣  Install Bot Wildcard ARI VPN"
+    printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "2️⃣  Restart Bot Wildcard ARI VPN"
     printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "0️⃣  Kembali"
     print_footer
     read -rp "Pilih opsi [0-5]: " optx
@@ -458,7 +458,7 @@ while true; do
   print_line
   printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "1️⃣  Menu Bot Panel (Bot Pribadi)"
   printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "2️⃣  Menu Bot Reseller (Bot Resseler VPN)"
-  printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "3️⃣  Menu Bot xyuzstorez (Bot SellVPN)"
+  printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "3️⃣  Menu Bot ARI VPN (Bot SellVPN)"
   printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "4️⃣  Menu Bot Notifikasi"
   printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "5️⃣  Menu Bot Wildcard"
   printf "${PURPLE}│${NC} %-50s ${PURPLE}│${NC}\n" "6️⃣  Restart Semua Bot"
@@ -466,7 +466,7 @@ while true; do
   print_line
   printf "${PURPLE}│${NC} %-23s : %-29s ${PURPLE}│${NC}\n" "Bot Panel" "$status_bot_kyt"
   printf "${PURPLE}│${NC} %-23s : %-29s ${PURPLE}│${NC}\n" "Bot Reseller" "$status_bot_cybervpn"
-  printf "${PURPLE}│${NC} %-23s : %-29s ${PURPLE}│${NC}\n" "Bot xyuzstorez" "$status_bot_sellvpn"
+  printf "${PURPLE}│${NC} %-23s : %-29s ${PURPLE}│${NC}\n" "Bot ARI VPN" "$status_bot_sellvpn"
   print_line
   printf "${PURPLE}│${NC} %-25s : %-19s ${PURPLE}│${NC}\n" "📡 IP Server" "$ip_server"
   printf "${PURPLE}│${NC} %-25s : %-12s ${PURPLE}│${NC}\n" "📅 Tanggal" "$tanggal_server"

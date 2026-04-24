@@ -37,12 +37,12 @@ async def saldo_handler(event):
 **» status:** `success✅`
 **━━━━━━━━━━━━━━━━**
 **» Change date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
-                 Button.url("[ wahtsap ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
+                 Button.url("[ wahtsap ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
         else:
@@ -89,12 +89,12 @@ async def dana_handler(event):
 **» status:** `success✅`
 **━━━━━━━━━━━━━━━━**
 **» Change date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
-                 Button.url("[ Channel ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
+                 Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
         else:
@@ -140,12 +140,12 @@ async def dana_handler(event):
 **» status:** `success✅`
 **━━━━━━━━━━━━━━━━**
 **» Change date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
-                 Button.url("[ Channel ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
+                 Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
         else:
@@ -203,12 +203,12 @@ async def wallet_handler(event):
 **» status:** `success✅`
 **━━━━━━━━━━━━━━━━**
 **» Change date:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
-                 Button.url("[ Channel ]", "t.me/xytunnn")]
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
+                 Button.url("[ Channel ]", "t.me/ARI_VPN_STORE")]
             ]
             await event.respond(msg, buttons=inline)
         else:

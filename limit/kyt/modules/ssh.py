@@ -78,7 +78,7 @@ Button.inline(" 60 Days ","60")]])
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 » Save Link Account: `https://{DOMAIN}:81/ssh-{user.strip()}.txt`
 » Expired Until: `{later}`
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -101,7 +101,7 @@ async def show_ssh(event):
 {z}
 ```
 **Show All SSH User**
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -183,7 +183,7 @@ Button.inline(" 60 Menit ","60")]])
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 » Save Link Account: `https://{DOMAIN}:81/ssh-{user.strip()}.txt`
 » Expired Until: `{exp} Menit`
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -229,7 +229,7 @@ async def login_ssh(event):
 {z}
 
 **shows logged in users SSH Ovpn**
-**» 🤖@xytunnn**
+**» 🤖@ARI_VPN_STORE**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -259,7 +259,7 @@ Button.inline(" REGIS IP ","regis")],
 ** ✨» Hostname/IP :** `{DOMAIN}`
 ** ✨» ISP :** `{z["isp"]}`
 ** ✨» Country :** `{z["country"]}`
-** 🤖» @xytunnn**
+** 🤖» @ARI_VPN_STORE**
 ✧◇───────────────────◇✧ 
 """
 		await event.edit(msg,buttons=inline)

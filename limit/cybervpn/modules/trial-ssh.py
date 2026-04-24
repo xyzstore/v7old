@@ -64,11 +64,11 @@ async def trial_ssh(event):
 `GET wss:/// HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» Expired Until:** `{later}`
-**» 💌@xytunnn**
+**» 💌@ARI_VPN_STORE**
 **━━━━━━━━━━━━━━━━**
 """
             inline = [
-                [Button.url("[ Contact ]", "wa.me/6285960592386"),
+                [Button.url("[ Contact ]", "wa.me/6281327393959"),
                  Button.url("[ Channel ]", "https://whatsapp.com/channel/0029VafjqbGEFeXgezYgQH0u")]
             ]
             await event.respond(msg, buttons=inline)

@@ -29,7 +29,7 @@ async def start_menu(event):
                     [Button.inline("Trojan Menu", "trojan-member"),
                      Button.inline("Socks Menu", "shadowsocks-member")],
                     [Button.inline("Noobzv Vpn", "noobzvpn-member")],
-                    [Button.url("✨whatsapp✨", "https://wa.me/6285960592386"),
+                    [Button.url("✨whatsapp✨", "https://wa.me/6281327393959"),
                      Button.inline("💵Topup Manual💵", f"topup")]
                 ]
 
@@ -73,8 +73,8 @@ async def start_menu(event):
                     [Button.inline("💰ADD MONEY💰 ", "addsaldo")],
                     [Button.inline("👙CHECKING VPS👙", "info"),
                      Button.inline("👙FEATURES SET👙", "setting")],
-                    [Button.url("📩Whatsapp📩", "https://wa.me/6285960592386"),
-                     Button.url("📤BuyScript📤", "https://t.me/xytunnn")]
+                    [Button.url("📩Whatsapp📩", "https://wa.me/6281327393959"),
+                     Button.url("📤BuyScript📤", "https://t.me/ARI_VPN_STORE")]
                 ]
 
                 admin_msg = f"""
