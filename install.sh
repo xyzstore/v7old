@@ -807,15 +807,21 @@ rm -rf /tmp/v7old-menu
 }
 function profile(){
 clear
+# Pastikan /etc/botapi.conf ada (akan ditulis ulang oleh installer bot kalau dipasang)
+[ -f /etc/botapi.conf ] || touch /etc/botapi.conf
 cat >/root/.profile <<EOF
-if [ "$BASH" ]; then
+export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+if [ "\$BASH" ]; then
 if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
 fi
 mesg n || true
-menu
+[ -t 0 ] && menu
 EOF
+# Pastikan PATH juga tersedia di sesi non-login (interactive bash)
+grep -q "/usr/local/sbin" /root/.bashrc 2>/dev/null || \
+  echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin' >> /root/.bashrc
 cat >/etc/cron.d/xp_all <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
