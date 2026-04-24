@@ -1,0 +1,7 @@
+#!/bin/bash
+  # SlowDNS module placeholder
+  # Skipped automatic SlowDNS install — module not bundled
+  # To install SlowDNS manually, refer to documentation
+  echo "[SKIP] SlowDNS module installer not bundled (placeholder)."
+  exit 0
+  
