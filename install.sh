@@ -515,6 +515,36 @@ systemctl start rc-local.service
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
+# kernel tuning untuk vps ringan & responsif setelah reboot
+cat >/etc/sysctl.d/99-vpn-tuning.conf <<EOSYS
+# memori
+vm.swappiness=10
+vm.vfs_cache_pressure=50
+# tcp
+net.core.somaxconn=4096
+net.core.netdev_max_backlog=5000
+net.ipv4.tcp_max_syn_backlog=4096
+net.ipv4.tcp_fin_timeout=15
+net.ipv4.tcp_keepalive_time=300
+net.ipv4.tcp_tw_reuse=1
+net.ipv4.tcp_fastopen=3
+net.ipv4.tcp_congestion_control=bbr
+net.core.default_qdisc=fq
+# file descriptors
+fs.file-max=1000000
+EOSYS
+sysctl --system >/dev/null 2>&1
+
+# naikkan limit nofile/nproc agar daemon (xray, ws, dropbear) tidak mentok
+cat >/etc/security/limits.d/99-vpn.conf <<EOLIM
+* soft nofile 1000000
+* hard nofile 1000000
+* soft nproc 65535
+* hard nproc 65535
+root soft nofile 1000000
+root hard nofile 1000000
+EOLIM
+
 #update
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime

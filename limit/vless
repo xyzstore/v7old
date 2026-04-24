@@ -32,7 +32,7 @@ function con() {
 
 
   while true; do
-  sleep 5
+  sleep 30
   data=($(cat /etc/xray/config.json | grep '^#&' | cut -d ' ' -f 2 | sort | uniq))
   if [[ ! -e /etc/limit/vless ]]; then
   mkdir -p /etc/limit/vless

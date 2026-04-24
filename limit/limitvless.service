@@ -1,12 +1,20 @@
 [Unit]
-Description=Limit Usage Xray Service
+Description=Limit Usage Xray Service (vless)
 Documentation=FighterTunnel
-After=syslog.target network-online.target
+After=syslog.target network-online.target xray.service
+Wants=network-online.target
+PartOf=xray.service
 
 [Service]
 User=root
+Type=simple
+Nice=15
+IOSchedulingClass=idle
+IOSchedulingPriority=7
 NoNewPrivileges=true
 ExecStart=/etc/xray/limit.vless
+Restart=on-failure
+RestartSec=15
 
 [Install]
 WantedBy=multi-user.target

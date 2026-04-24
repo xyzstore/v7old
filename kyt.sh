@@ -78,12 +78,18 @@ sudo find /usr/bin -type f -name "*.session" -exec rm -f {} \;
 cat > /etc/systemd/system/kyt.service << END
 [Unit]
 Description=Simple kyt - @kyt
-After=network.target
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
 
 [Service]
+Type=simple
 WorkingDirectory=/usr/bin
 ExecStart=/usr/bin/kyt/venv/bin/python3 -m kyt
-Restart=always
+Restart=on-failure
+RestartSec=20
+Nice=10
 
 [Install]
 WantedBy=multi-user.target
